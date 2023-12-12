@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    color: initial;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    font-family: "Montserrat";
+}
+
+.container{
+    margin: 10% 5%;
+    border-radius: 0 0 4% 4%;
+}
+
+.image{
+    width: 300px;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4% 4% 0 0;
+}
+
+.description{
+    background-color: hsl(0, 0%, 100%);
+    padding: 5% ;
+    margin-top:-4px;
+    border-radius: 0 0 4% 4%;
+}
+
+.description h1{
+    color: hsla(228, 12%, 48%, 0.76);
+    margin-bottom: 4%;
+    font:700 0.7rem "Montserrat";
+    letter-spacing:8px;
+    text-transform: uppercase;
+}
+
+.description h2{
+    font: 700 2rem "Fraunces";
+}
+
+.description p{
+    color: hsl(228, 12%, 48%);
+    margin: 5% 0;
+    font:500 14px "Montserrat";
+    line-height: 1.5rem;
+}
+
+.price{
+    display: flex;
+}
+
+.description h3{ 
+    color: hsl(158, 36%, 37%);
+    font: 700 2rem "Fraunces";
+}
+
+.description h4{
+    color: hsla(228, 12%, 48%, 0.685);
+    margin: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration:line-through;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px auto;
+    margin-top: 5%;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.button img{
+    width: auto;
+    height: 5%;
+    margin: 5% 10px; 
+}
+
+.button p{
+    color: hsl(0, 0%, 100%);
+    font:700 14px "Montserrat";
+}
+
+.button:hover{
+    background-color: hsl(157, 45%, 19%);
+}
+
+@media(min-width:720px){
+    .container{
+        display: flex;
+        width: 600px;
+        height: auto;
+        margin: 6% auto;
+    }
+
+    .description,.image img{
+        flex: 1 ;
+    }
+
+    .image img{
+        border-radius: 10px 0 0 10px;
+            
+    }
+    
+
+    .description{
+        border-radius: 0 10px 10px 0;
+        margin: 0;
+    }
+
+    .button{
+        margin-top: 30px;
+    }
+
+    .price{
+        margin-top: 25px;
+    }
+}
